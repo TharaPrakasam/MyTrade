@@ -1,0 +1,188 @@
+<div>
+    <app-header></app-header>
+    <div>
+            <div fxLayout.lg="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="space-between" class="p-10"
+            fxLayoutGap.sm="20px" fxLayoutGap.xs="15px">
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.lg="33">
+                    <mat-card class="cardHeight">
+                        <div class="p-20">
+                            <p class="mb-0">Fund Client Reporting - Report Configuration</p>
+                            <div class="sub-div" fxLayout="row" fxLayoutAlign="space-between">
+                                <div fxFlex="30">
+                                        <p>Image Here</p>
+                                </div>
+                                <div fxFlex="70">
+                                    <h4 class="text-white mb-0">Fund Report Configuratin</h4>
+                                    <div class="list">
+                                        <ul>
+                                            <li>Define fund scope</li>
+                                            <li>Select reports</li>
+                                            <li>Define distribution Chennal</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-div mt-20" fxLayout="row" fxLayoutAlign="space-between">
+                                <div fxFlex="30">
+                                        <p>Image Here</p>
+                                </div>
+                                <div fxFlex="70">
+                                    <h4 class="text-white mb-0">FCR My Tasks</h4>
+                                    <div class="list">
+                                        <ul>
+                                            <li>4-eyes checks config. change</li>
+                                            <li>All pending 4-eyes checks</li>
+                                            <li>Audit trail</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.lg="33">
+                    <mat-card class="cardHeight">
+                        <div class="p-20">
+                            <p>Global Custody Reporting  - Report Configuration</p>
+                            <div class="sub-div" fxLayout="row" fxLayoutAlign="space-between">
+                                <div fxFlex="30">
+                                        <p>Image Here</p>
+                                </div>
+                                <div fxFlex="70">
+                                    <h4 class="text-white">GC Report Configuration</h4>
+                                    <div class="list">
+                                        <ul>
+                                            <li>Define 1GM portfolio scoope</li>
+                                            <li>Select IGM Reports</li>
+                                            <li>Define IGM distribution chennal</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-div mt-20" fxLayout="row" fxLayoutAlign="space-between">
+                                <div fxFlex="30">
+                                        <p>Image Here</p>
+                                </div>
+                                <div fxFlex="70">
+                                    <h4 class="text-white">GC My Tasks</h4>
+                                    <div class="list">
+                                        <ul>
+                                            <li>4-eyes checks on reports</li>
+                                            <li>All pending 4-eyes checks</li>
+                                            <li>Audit trail</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.lg="33">
+                    <mat-card class="cardHeight">
+                        <div class="p-20">
+                            <p>Favorite Configuration</p>
+                            <ag-grid-angular
+                            style="width: 100%; height: 320px;"
+                            class="ag-theme-alpine"
+                            [rowData]="rowData"
+                            [columnDefs]="colDefs"
+                            >
+                           </ag-grid-angular>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+
+            <div fxLayout.lg="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="space-between" class="p-10"
+            fxLayoutGap.sm="20px" fxLayoutGap.xs="15px">
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.lg="33">
+                    <mat-card class="cardHeight">
+                        <div class="p-20">
+                            <p>Report Archive and Reference Data</p>
+                            <div class="sub-div" fxLayout="row" fxLayoutAlign="space-between">
+                                <div fxFlex="30">
+                                        <p>Image Here</p>
+                                </div>
+                                <div fxFlex="70">
+                                    <h4 class="text-white">Report Archive</h4>
+                                    <div class="list">
+                                        <ul>
+                                            <li>Browse report hitory / archive</li>
+                                            <li>Re-send reports to client</li>
+                                            <li>Download reports</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-div mt-20" fxLayout="row" fxLayoutAlign="space-between">
+                                <div fxFlex="30">
+                                        <p>Image Here</p>
+                                </div>
+                                <div fxFlex="70">
+                                    <h4 class="text-white">Static Data</h4>
+                                    <div class="list">
+                                        <ul>
+                                            <li>4-eyes checks config. change</li>
+                                            <li>All pending 4-eyes checks</li>
+                                            <li>Audit trail</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.lg="33">
+                    <mat-card class="cardHeight">
+                        <div class="p-20">
+                            <p>Adhoc Reporting  - Report Configuration</p>
+                            <div class="sub-div" fxLayout="row" fxLayoutAlign="space-between">
+                                <div fxFlex="30">
+                                        <p>Image Here</p>
+                                </div>
+                                <div fxFlex="70">
+                                    <h4 class="text-white">Adhoc Report Configuration</h4>
+                                    <div class="list">
+                                        <ul>
+                                            <li>Run Reports on demand</li>
+                                            <li>Downloads / send Reports</li>
+                                            <li>Maintain my favorites</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-div mt-20" fxLayout="row" fxLayoutAlign="space-between">
+                                <div fxFlex="30">
+                                        <p>Image Here</p>
+                                </div>
+                                <div fxFlex="70">
+                                    <h4 class="text-white">Report Customizer</h4>
+                                    <div class="list">
+                                        <ul>
+                                            <li>4-eyes checks on reports</li>
+                                            <li>All pending 4-eyes checks</li>
+                                            <li>Audit trail</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.lg="33">
+                    <mat-card class="cardHeight">
+                        <div class="p-20">
+                            <p>Favorite Configuration</p>
+                            <ag-grid-angular
+                            style="width: 100%; height: 320px;"
+                            class="ag-theme-alpine"
+                            [rowData]="rowData1"
+                            [columnDefs]="colDefs1"
+                            >
+                           </ag-grid-angular>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+    </div>
+</div>

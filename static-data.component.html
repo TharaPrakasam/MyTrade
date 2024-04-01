@@ -1,0 +1,90 @@
+<div>
+    <app-header></app-header>
+    <div fxLayout.lg="row" fxLayout.xs="column" fxLayout.sm="column">
+        <mat-card fxFlex.lg="{{fxFlexForCol1}}" fxFlex.xs="100" fxFlex.sm="100" [ngStyle]="{'height': innerHeight + 'px'}" class="divCard"
+        *ngIf="isHideFirstCol">
+          <div fxLayout="row"> 
+            <div fxFlex="100" class="firstDiv">
+                <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+                    <mat-tab label="Static Data | Select Configuration">
+                        <div class="header-border"></div> 
+                        <div class="m-10">
+                            <ag-grid-angular
+                            style="width: 100%; height: 380px;"
+                            class="ag-theme-alpine"
+                            [rowData]="rowData"
+                            [columnDefs]="columnDefs">
+                            </ag-grid-angular>
+                        </div>
+                        <div class="bounds" [ngStyle]="{'height': btnHeight + 'px'}">    
+                            <div class="content"   fxLayoutAlign="end end" fxLayoutGap="15px" >                                 
+                                <button mat-raised-button color="primary" class="example-action-button">
+                                    Save
+                                  </button>
+                                  <button mat-raised-button color="accent" class="example-action-button">
+                                   Cancel
+                                  </button>                              
+                            </div>                            
+                          </div>
+                    </mat-tab>
+                  </mat-tab-group>
+            </div>
+          </div>
+      </mat-card>
+      <mat-card fxFlex.lg="{{fxFlexForCol2}}" fxFlex.xs="100" fxFlex.sm="100" [ngStyle]="{'height': innerHeight + 'px'}" class="divCard">
+        <div fxLayout="row" class="d-flex">
+            <div fxFlex="3">
+                <mat-icon class="icon-style" (click)="fullscreen()">fullscreen</mat-icon>
+            </div>
+            <div fxFlex="95">
+                <mat-tab-group>
+                    <mat-tab label="Client Names"> 
+                        <div class="header-border"></div>
+                        <div class="content-div">
+                            <div class="bg-head">
+                                <p>Maintain Client Names</p>
+                            </div>
+                            <div class="my-2010">
+                                <mat-form-field appearance="outline" class="w-full">
+                                    <mat-label>Client Name</mat-label>
+                                    <input matInput placeholder="Placeholder" class="w-full" required>
+                                  </mat-form-field>
+
+                                  <mat-form-field appearance="outline" class="w-full">
+                                    <mat-select placeholder="Config Type">
+                                      <mat-option [value]="'GB'">Test</mat-option>
+                                      <mat-option [value]="'US'">Options</mat-option>
+                                      <mat-option [value]="'CA'">Test</mat-option>
+                                    </mat-select>
+                                  </mat-form-field>
+                                    <div class="bg-head m-0">
+                                        <p>Change History</p>
+                                    </div>
+                                    <div class="chnage-history-div">
+                                            <p class="txt-history">No History Available</p>
+                                    </div>
+                            </div>
+
+                        </div>
+                        <div class="bounds" [ngStyle]="{'height': btnHeight + 'px'}">    
+                            <div class="content-div-two"   fxLayoutAlign="end end" fxLayoutGap="15px" >                                 
+                                <button mat-raised-button color="primary" class="example-action-button">
+                                    Save
+                                  </button>
+                                  <button mat-raised-button color="accent" class="example-action-button">
+                                   Cancel
+                                  </button>                              
+                            </div>                            
+                          </div>    
+                    </mat-tab>
+                    <mat-tab label="Recipient Categories"> Content 2 </mat-tab>
+                    <mat-tab label="Client Contacts"> Content 3 </mat-tab>
+                    <mat-tab label="E-Mail Templates"> Content 3 </mat-tab>
+                    <mat-tab label="FTPS Configuration"> Content 3 </mat-tab>
+                    <mat-tab label="Rule Group"> Content 3 </mat-tab>
+                  </mat-tab-group>
+            </div>
+        </div>
+    </mat-card>
+      </div>
+</div>

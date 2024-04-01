@@ -1,0 +1,30 @@
+.p-10 { padding: 10px;;}
+.p-20 { padding: 20px;}
+.sub-div  { background: #26262c !important; padding: 10px; height: 150px;}
+.text-white { color: #FFF;}
+.list {
+    margin-top: 5px;
+}
+.list ul {
+    line-height: 30px;
+}
+.list ul li {
+    color: #FFF;
+}
+.mt-20 { margin-top: 20px;}
+.cardHeight {
+    height: 400px;
+}
+.mb-0 { margin-bottom: 0px;}
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    .sub-div {
+        height: 180px;
+    }
+    .cardHeight {
+        height: 450px;
+    }
+    .list ul {
+        line-height: 25px;
+    }
+}

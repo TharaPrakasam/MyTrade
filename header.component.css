@@ -1,0 +1,16 @@
+.header {
+    height: 50px;
+    background: #05041c;
+}
+
+.title {
+    margin-bottom: 0px  !important;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-white { color: #FFF;}
+.d-flex { display: flex;}
+.img-width { width: 20%;}
+.menu-div { background: #05041c !important;}
