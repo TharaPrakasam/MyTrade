@@ -1,67 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
 
 @import 'ag-grid-community/dist/styles/ag-grid.css';
 @import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 /* @import '@angular/material/prebuilt-themes/purple-green.css'; */
 @import url('https://fonts.googleapis.com/icon?amily=Material+Icons');
 
-
-
-body {
-    margin: 0px;
-    background: #f1f1f1;
-}
-
+body {margin: 0px;background: #f1f1f1; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 .mat-mdc-menu-content { background: #26262c !important;}
 .menu-text { color: #FFF; font-size: 12px;}
 .menu-icon { color: #FFF !important; font-size: 18px; line-height: 25px;}
-.tab-style { background: #CCC;}
-.first-tab .mdc-tab-indicator__content { width: 77%; margin-left: -10px;}
+/* .first-tab .mdc-tab-indicator__content { width: 77%; margin-left: -10px;}
 .second-tab .mdc-tab-indicator__content { width: 77%; margin-left: 5px;}
-
-
 .first-tab .mdc-tab { justify-content: flex-start;}
 .first-tab .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label { color: #000; letter-spacing: normal;}
 .second-tab .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label { color: #000; letter-spacing: normal;}
-.first-tab .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
-    flex-grow: initial;
-    width: 40%;
-}
+.first-tab .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {flex-grow: initial;width: 40%;}
 .first-tab .mat-mdc-tab .mdc-tab-indicator__content--underline,
-.second-tab .mat-mdc-tab .mdc-tab-indicator__content--underline {
-    border-color: #000;
-}
-.second-tab .mdc-tab  {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.second-tab .mat-mdc-tab .mdc-tab__content {
-    position: relative;
-    pointer-events: auto;
-    font-size: 11px;
-    letter-spacing: normal;
-}
+.second-tab .mat-mdc-tab .mdc-tab-indicator__content--underline {border-color: #000;}
+.second-tab .mdc-tab  {padding-left: 15px;padding-right: 15px;}
+.second-tab .mat-mdc-tab .mdc-tab__content {position: relative;pointer-events: auto;font-size: 11px;letter-spacing: normal;} */
 .my-10 { margin: 10px 0px;}
 .my-5 { margin: 5px 0px;}
 .mb-5 { margin-bottom: 5px;}
 .mt-10 { margin-top: 10px;}
 .mt-15 { margin-top: 15px;}
 .ml-5 { padding-left: 15px;}
-
-/* .mat-mdc-text-field-wrapper {
-    height: 40px !important;
-    flex: auto;
-    will-change: auto;
-}
-.mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
-    top: 20px !important;
-} */
 .cursor-pointer { cursor: pointer;}
-
 .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -80,5 +46,99 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 ::ng-deep .ag-cell-label-container{flex-direction: row}
 ::ng-deep .ag-header-cell-label { flex-direction: row-reverse; }
+.mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, 
+.mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+    color: #000;
+}
 
-/* .firstDiv .mat-mdc-tab-header { width: 30%;} */
+.mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline, 
+.mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+    border-color: #000 !important;
+}
+.mdc-tab__content {
+    letter-spacing: normal !important;
+}
+
+.btn-save {
+    background: #FFF;
+    border: 1px solid  #000 !important;
+}
+
+.btn-save:hover {
+    background: #CCC !important;
+    color: #000 !important;
+}
+.custom-style{
+    background-color:#FFF !important;
+    color:#000 !important;
+    border:1px solid #CCC;
+  }
+
+.mat-mdc-snack-bar-container .mdc-snackbar__surface {
+    background-color: #FFF !important;
+    border:1px solid  #CCC;
+}
+.mat-mdc-snack-bar-container .mdc-snackbar__label {color:#000 !important;}
+.mat-mdc-form-field .mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+    font-size: 14px;
+}
+
+.btn-position {bottom: 0px;position: absolute;}
+.btn-style {overflow-y: hidden;min-height: 100%; margin-right: 5%;}
+.body-content {overflow-y: hidden;min-height: 90%;}
+.icon-style {font-size: 15px;cursor: pointer;/* padding-top: 15px; */}
+.d-flex {display: flex;}
+.sub-head { border-bottom: 1px solid #CCC; height: 0px; width: 100%; margin: auto;}
+.card-body { border: 1px solid #CCC; margin-top: 10px; 
+    /* position: absolute;  */
+    width: 99%;}
+.bg-head { background: #c0c0c3; padding: 5px; margin: 10px;}
+.mb-0 { margin-bottom: 0px !important;}
+.m-10 {margin: 10px;}
+.w-full { width: 100%;}
+.mt-10 { margin-top: 10px;}
+.my-2010 { margin: 20px 10px;}
+.mt-10 { margin-top: 10px;}
+
+.mt-20 { margin-top: 20px;}
+.m-0 { margin: 0px !important;}
+.change-history-div { border: 1px solid #CCC; margin-top: 10px; 
+    /* height: 26vh; */
+}
+.txt-history { text-align: center; width: 100%;}
+.tree-view-structure {  border:1px solid #CCC;}
+.mb-0 { margin-bottom: 0px;}
+.card { height: 88vh; margin: 10px;}
+.bounds { margin-top: 75vh; position: relative;}
+.btn-bottom { position: relative; height: 80vh;}
+.btn-bottom-position { position: absolute;width: 100%; bottom: 20px; right: 20px;}
+.mat-error {
+    color: #000 !important;
+  } 
+   
+  .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+    color: #000 !important;
+  }
+   
+  .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: #000 !important;
+  }
+
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled) 
+  .mdc-text-field--focused
+  .mdc-notched-outline__leading, 
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-text-field--focused 
+  .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+    border-width: 1px !important;
+    border-color: rgba(0, 0, 0, 0.38) !important;
+}
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading, 
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch, 
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+    border-width: 1px !important;
+    border-color: rgba(0, 0, 0, 0.38) !important;
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mat-mdc-floating-label {
+    color: #000 !important;
+}
